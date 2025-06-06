@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/d/14GKpWzWQXVl34Z0-aV1hHfu1hTVoYkYi=s220"/>
   <title>Kudlit | Transforming Business</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
       --primary-color: #2D34A0;
+    }
+    
+    .logo-border {
+      border: 1px solid white;
+    }
+    
+    .partner-logo {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .partner-logo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
@@ -16,7 +29,7 @@
   <nav class="bg-[var(--primary-color)] text-white px-4 py-3 fixed top-0 w-full z-50 shadow-md">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" style="border: 1px solid white" alt="Kudlit Logo" class="w-8 h-8" />
+        <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" alt="Kudlit Logo" class="w-8 h-8 logo-border" />
         <div class="text-lg font-bold">Kudlit</div>
       </div>
       <div class="hidden md:flex gap-6">
@@ -60,7 +73,7 @@
   <!-- Hero Section -->
   <header class="bg-[var(--primary-color)] text-white p-8 text-center mt-16">
     <div class="max-w-4xl mx-auto">
-      <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" alt="Kudlit Logo" class="w-16 h-16 mx-auto mb-4" style="border: 1px solid white"/>
+      <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" alt="Kudlit Logo" class="w-16 h-16 mx-auto mb-4 logo-border" />
       <h1 class="text-4xl font-bold mb-2">We are Kudlit</h1>
       <p class="text-lg">Transforming Business, One Kudlit at a Time.</p>
     </div>
@@ -110,6 +123,10 @@
           <h4 class="font-semibold text-lg">Data-Driven Tools</h4>
           <p class="text-sm">Gain insights to guide smart decisions.</p>
         </div>
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-lg">Custom Software Solutions</h4>
+          <p class="text-sm">We design and develop tailored applications to solve your unique business needs.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -120,6 +137,20 @@
       <h2 class="text-2xl font-bold mb-4">Be Part of Our Beta Program</h2>
       <p class="mb-6">We're looking for early adopters to help shape Kudlit. Get early access, collaborate with our team, and be part of the change.</p>
       <a href="#contact" class="bg-[var(--primary-color)] text-white px-6 py-2 rounded shadow">Join the Beta</a>
+    </div>
+  </section>
+  
+    <!-- Partners Section -->
+  <section id="partners" class="py-12 px-4 md:px-12 bg-gray-100 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Our Partners</h2>
+      <p class="mb-8">We proudly collaborate with organizations and businesses that believe in building with us from the ground up.</p>
+      <div class="grid gap-6 md:grid-cols-3 items-center justify-center">
+        <a href="https://www.facebook.com/htddc" target="_blank" class="flex flex-col items-center">
+          <img src="https://img.freepik.com/premium-vector/cute-fairy-tooth_663547-15.jpg?w=360" alt="HTDDC Logo" class="partner-logo w-24 h-24 object-contain mb-2" />
+          <span class="text-lg text-[var(--primary-color)] font-semibold hover:underline">Happy Tooth Dae Dental Clinic</span>
+        </a>
+      </div>
     </div>
   </section>
 
