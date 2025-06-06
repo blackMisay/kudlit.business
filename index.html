@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kudlit | Transforming Business</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-color: #2D34A0;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navigation Bar -->
+  <nav class="bg-[var(--primary-color)] text-white px-4 py-3 fixed top-0 w-full z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" style="border: 1px solid white" alt="Kudlit Logo" class="w-8 h-8" />
+        <div class="text-lg font-bold">Kudlit</div>
+      </div>
+      <div class="hidden md:flex gap-6">
+        <a href="#about" class="hover:text-blue-300">About</a>
+        <a href="#mission" class="hover:text-blue-300">Mission & Vision</a>
+        <a href="#services" class="hover:text-blue-300">Services</a>
+        <a href="#beta" class="hover:text-blue-300">Beta</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#about" class="block py-2 mobile-link">About</a>
+      <a href="#mission" class="block py-2 mobile-link">Mission & Vision</a>
+      <a href="#services" class="block py-2 mobile-link">Services</a>
+      <a href="#beta" class="block py-2 mobile-link">Beta</a>
+      <a href="#contact" class="block py-2 mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <header class="bg-[var(--primary-color)] text-white p-8 text-center mt-16">
+    <div class="max-w-4xl mx-auto">
+      <img src="https://drive.google.com/thumbnail?id=1Ioc7Bc_xPBRjE3V-zMDVIN7qnDFq-9pH" alt="Kudlit Logo" class="w-16 h-16 mx-auto mb-4" style="border: 1px solid white"/>
+      <h1 class="text-4xl font-bold mb-2">We are Kudlit</h1>
+      <p class="text-lg">Transforming Business, One Kudlit at a Time.</p>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-12 px-4 md:px-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">About Kudlit</h2>
+      <p class="mb-4">Kudlit is a local software company based in the Philippines, committed to helping businesses grow through simple, smart, and powerful digital solutions.</p>
+      <p class="mb-4">Inspired by the idea that even the smallest marks can spark meaningful change, we build tools that automate workflows, connect systems, and simplify operations.</p>
+      <p>From small teams to growing enterprises, Kudlit empowers businesses to work smarter, move faster, and focus on what matters most.</p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section id="mission" class="bg-gray-100 py-12 px-4 md:px-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">Our Mission & Vision</h2>
+      <div class="grid gap-6 md:grid-cols-2 text-left">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Mission</h3>
+          <p>To empower local businesses through simple, smart, and scalable software solutions that help them thrive in a digital world.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Vision</h3>
+          <p>To become a trusted global partner for innovative, user-centered software that transforms how businesses work—starting with one Kudlit at a time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <section id="services" class="py-12 px-4 md:px-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">What We Offer</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div>
+          <h4 class="font-semibold text-lg">Automation</h4>
+          <p class="text-sm">Streamline repetitive tasks and processes.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg">System Integration</h4>
+          <p class="text-sm">Seamlessly connect your existing tools.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg">Data-Driven Tools</h4>
+          <p class="text-sm">Gain insights to guide smart decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beta Program Invitation -->
+  <section id="beta" class="bg-blue-50 py-12 px-4 md:px-12 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Be Part of Our Beta Program</h2>
+      <p class="mb-6">We're looking for early adopters to help shape Kudlit. Get early access, collaborate with our team, and be part of the change.</p>
+      <a href="#contact" class="bg-[var(--primary-color)] text-white px-6 py-2 rounded shadow">Join the Beta</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 px-4 md:px-12 bg-gray-100 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-4">Have questions or want to learn more? Reach out to us:</p>
+      <p>Email: <a href="mailto:kudlit.business@gmail.com" class="text-blue-600">kudlit.business@gmail.com</a></p>
+      <p>Facebook: <a href="https://facebook.com/kudlit" class="text-blue-600">facebook.com/kudlit</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--primary-color)] text-white text-center py-6">
+    <p>&copy; 2025 Kudlit. All rights reserved.</p>
+  </footer>
+</body>
+</html>
